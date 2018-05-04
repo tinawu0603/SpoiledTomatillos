@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Spoiled Tomatillos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://use.fontawesome.com/0e91de170f.js"></script>
+    </head>
+    <body>
+    
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Sign in to Spoiled Tomatillos</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="userEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="userPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-block">Sign In</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Spoiled Tomatillos</a>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="containerNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signInModal">
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-6 landing-info">
+                <h1>Spoiled Tomatillos</h1>
+                <h4>Tagline</h4>
+                <p>More description</p>
+            </div>
+            <div class="col-6 registration">
+                <div class="subsection">
+                <h4>Register to join Spoiled Tomatillos</h4>
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-block">Register</button>
+                </form>
+                </div>
+                <br>
+                <p>Already have an account? <a href="#" data-toggle="modal" data-target="#signInModal">Sign in</a></p>
+                <p>Forgot your password? <a href="#">Reset it</a></p>
+            </div>
+        </div>
+        </div>
+    
+    </body>
+</html>

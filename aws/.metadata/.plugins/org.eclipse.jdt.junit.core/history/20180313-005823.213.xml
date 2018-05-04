@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="edu.northeastern.cs4500" project="cs4500-spring2018-team-51" tests="9" started="9" failures="1" errors="0" ignored="0">
+  <testsuite name="edu.northeastern.cs4500.MovieControllerTest" time="0.108">
+    <testcase name="test" classname="edu.northeastern.cs4500.MovieControllerTest" time="0.108">
+      <failure>java.lang.AssertionError: Not yet implemented&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at edu.northeastern.cs4500.MovieControllerTest.test(MovieControllerTest.java:15)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)&#13;
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="edu.northeastern.cs4500.Cs4500Spring2018Team51ApplicationTests" time="0.006">
+    <testcase name="contextLoads" classname="edu.northeastern.cs4500.Cs4500Spring2018Team51ApplicationTests" time="0.006"/>
+  </testsuite>
+  <testsuite name="edu.northeastern.cs4500.EndUserTest" time="0.009">
+    <testcase name="changePasswordCorrectTest" classname="edu.northeastern.cs4500.EndUserTest" time="0.004"/>
+    <testcase name="changePasswordFailTest" classname="edu.northeastern.cs4500.EndUserTest" time="0.005"/>
+  </testsuite>
+  <testsuite name="edu.northeastern.cs4500.MovieTest" time="0.001">
+    <testcase name="setRatingTest" classname="edu.northeastern.cs4500.MovieTest" time="0.0"/>
+    <testcase name="setYearTest" classname="edu.northeastern.cs4500.MovieTest" time="0.0"/>
+    <testcase name="getYearTest" classname="edu.northeastern.cs4500.MovieTest" time="0.0"/>
+    <testcase name="toStringTest" classname="edu.northeastern.cs4500.MovieTest" time="0.001"/>
+    <testcase name="getRatingTest" classname="edu.northeastern.cs4500.MovieTest" time="0.0"/>
+  </testsuite>
+</testrun>

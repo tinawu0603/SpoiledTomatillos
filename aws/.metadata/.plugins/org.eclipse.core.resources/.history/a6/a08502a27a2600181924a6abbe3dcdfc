@@ -1,0 +1,16 @@
+package edu.northeastern.cs4500.controllers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class MovieControllerTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

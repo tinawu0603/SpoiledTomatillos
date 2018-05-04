@@ -1,0 +1,148 @@
+2018-04-17 14:27:37.160  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.UserControllerTest                 : Starting UserControllerTest on Emilys-MacBook-Pro-2.local with PID 36652 (started by emilytrinh in /Users/emilytrinh/team-51-spring18/aws/cs4500-spring2018-team-51)
+2018-04-17 14:27:37.160 DEBUG Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.UserControllerTest                 : Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2018-04-17 14:27:37.161  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.UserControllerTest                 : No active profile set, falling back to default profiles: default
+2018-04-17 14:27:52.919  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.UserControllerTest                 : Started UserControllerTest in 16.142 seconds (JVM running for 18.569)
+2018-04-17 14:27:53.609  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user, Emily Trinh by full name.
+2018-04-17 14:27:53.865 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Friendship for et@neu.edu and michelle2020@gmail.com does not exist.
+2018-04-17 14:27:53.923  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:54.011  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:54.011  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : ms@ms.com authorized et@neu.edu admin privledges.
+2018-04-17 14:27:54.012  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:54.067 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : New email already has an account.
+2018-04-17 14:27:54.354  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:54.354  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user michelle2020@gmail.com by email.
+2018-04-17 14:27:54.431 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : SQL Exception when trying to add a friend.
+2018-04-17 14:27:54.567 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User et@neu.edu has logged out
+2018-04-17 14:27:54.610  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user michelle2020@gmail.com by email.
+2018-04-17 14:27:54.610 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : michelle2020@gmail.com does not have authorization to make et@neu.edu an admin
+2018-04-17 14:27:54.683 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account michelle2020@gmail.com or et@neu.edu does not exist.
+2018-04-17 14:27:54.775 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account does not exist.
+2018-04-17 14:27:54.832  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user jokes@jokes by email.
+2018-04-17 14:27:54.832 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User jokes@jokes is not authorized to perform this action.
+2018-04-17 14:27:54.944  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Email for user et@neu.edu has been updated to dogs@dogs.com
+2018-04-17 14:27:55.200  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:55.277  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:55.325 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User, et@neu.edu has already logged out.
+2018-04-17 14:27:55.388 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User account does not exist.
+2018-04-17 14:27:55.441 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Email and Password do not match
+2018-04-17 14:27:55.515  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user lame@lame.com by email.
+2018-04-17 14:27:55.739 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Error adding new user. Please ensure email is not used for another account.
+2018-04-17 14:27:55.739  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : New user lame@lame.com has been created.
+2018-04-17 14:27:55.780  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:55.780 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User ms@ms.com is not authorized to perform this action.
+2018-04-17 14:27:55.860 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account et@neu.edu or et@neu.edu does not exist.
+2018-04-17 14:27:55.892 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account heehee@neu.edu or jesus@jesus.com does not exist.
+2018-04-17 14:27:55.923 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account et@neu.edu or heehee@neu.edu does not exist.
+2018-04-17 14:27:56.000  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Found friends for user et@neu.edu
+2018-04-17 14:27:56.005  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:56.064 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User account does not exist.
+2018-04-17 14:27:56.335  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user weeeee@gmail.com by email.
+2018-04-17 14:27:56.335 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : One of the users does not exist.
+2018-04-17 14:27:56.556  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:56.556  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:56.556 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Users have already submitted a friend request.
+2018-04-17 14:27:56.789  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user michelle2020@gmail.com by email.
+2018-04-17 14:27:56.789  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user weeeee@gmail.com by email.
+2018-04-17 14:27:56.789 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : One of the users does not exist.
+2018-04-17 14:27:56.818 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Account heehee@neu.edu or et@neu.edu does not exist.
+2018-04-17 14:27:56.847 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Given email et is not in valid email form.
+2018-04-17 14:27:56.884 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Given email et. is not in valid email form.
+2018-04-17 14:27:56.908 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Given email et@ is not in valid email form.
+2018-04-17 14:27:56.941 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User account does not exist.
+2018-04-17 14:27:56.966  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user bleh@bleh.com by email.
+2018-04-17 14:27:57.018  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User 1 has been searched.
+2018-04-17 14:27:57.077  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user, %Emily% by first name.
+2018-04-17 14:27:57.153  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:57.156  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Friend request for et@neu.edu has been confirmed by admin@admin.com
+2018-04-17 14:27:57.365  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:57.424  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:57.424 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Given email et@neu.edu already has an account.
+2018-04-17 14:27:57.487  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user %Trinh% by last name.
+2018-04-17 14:27:57.547  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user et@neu.edu by email.
+2018-04-17 14:27:57.547 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User et@neu.edu is not authorized to perform this action.
+2018-04-17 14:27:57.620  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : e.trinhdeleted their account
+2018-04-17 14:27:57.682  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user, %Emily Trinh% by full name.
+2018-04-17 14:27:57.682  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user, %Emily Trinh% by full name.
+2018-04-17 14:27:57.937  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user weeeee@gmail.com by email.
+2018-04-17 14:27:57.937 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : One of the users does not exist.
+2018-04-17 14:27:57.961  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : User has searched for another user ms@ms.com by email.
+2018-04-17 14:27:57.961  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Deleted user et@neu.edu from the database
+2018-04-17 14:28:41.361  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.EndUserTest                        : Starting EndUserTest on Emilys-MacBook-Pro-2.local with PID 36659 (started by emilytrinh in /Users/emilytrinh/team-51-spring18/aws/cs4500-spring2018-team-51)
+2018-04-17 14:28:41.361 DEBUG Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.EndUserTest                        : Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2018-04-17 14:28:41.362  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.EndUserTest                        : No active profile set, falling back to default profiles: default
+2018-04-17 14:28:53.510  INFO Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.EndUserTest                        : Started EndUserTest in 12.433 seconds (JVM running for 13.714)
+2018-04-17 14:28:53.635 ERROR Emilys-MacBook-Pro-2.local
+			--- [           main] e.n.c.l.Log                              : Password entered does not match current password.

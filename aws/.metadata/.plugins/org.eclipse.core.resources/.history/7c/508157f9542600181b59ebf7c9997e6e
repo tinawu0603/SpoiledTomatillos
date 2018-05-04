@@ -1,0 +1,192 @@
+package edu.northeastern.cs4500.controllers;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class MovieController {
+	//Create one instance of a controller
+	public static MovieController movieControllerInstance = null;
+	public static MovieController getMovieControllerInstance() {
+		if (movieControllerInstance == null) {
+			movieControllerInstance = new MovieController();
+		}
+		return movieControllerInstance;
+	}
+
+	// Can only be called by the getInstance function
+	private MovieController() { }
+
+	@Autowired
+	MovieRepository MovieRepository;
+
+
+	//@RequestMapping("/api/user/select/all")
+	public List<Movie> findAllMovies() {
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet result = null;
+		List<Movie> myList = new ArrayList<Movie>();
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			statement = connection.createStatement();
+			String sql = "SELECT * FROM movie";
+			result = statement.executeQuery(sql);
+			while(result.next()) {
+				String movieID = result.getString("movieID");
+				String title = result.getString("title");
+				String year = result.getString("year");
+				String rating = result.getString("rating");
+				String plot = result.getString("plot");
+				String poster = result.getString("poster");
+				Movie movie = new Movie(movieID, title, year, rating, plot, poster);
+				myList.add(movie);
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return myList;
+	}
+
+	public List<Movie> findMovieByTitle(String title) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		ResultSet result = null;
+		List<Movie> myList = new ArrayList<Movie>();
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			String sql = "SELECT * FROM movie WHERE title = ?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, title);
+			result = statement.executeQuery();
+			int i = 1;
+			while(result.next() && i <= 10) {
+				String movieID = result.getString("movieID");
+				String title1 = result.getString("title");
+				String year = result.getString("year");
+				String rating = result.getString("rating");
+				String plot = result.getString("plot");
+				String poster = result.getString("poster");
+				Movie movie = new Movie(movieID, title1, year, rating, plot, poster);
+				myList.add(movie);
+				i++;
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return myList;
+	}
+
+	public Movie findMoviebyID(String movieID) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		ResultSet result = null;
+		List<Movie> myList = new ArrayList<Movie>();
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			String sql = "SELECT * FROM movie WHERE movieID = ?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, movieID);
+			result = statement.executeQuery();
+
+			if(result.next()) {
+				String movieId = result.getString("movieID");
+				String title = result.getString("title");
+				String year = result.getString("year");
+				String rating = result.getString("rating");
+				String plot = result.getString("plot");
+				String poster = result.getString("poster");
+				Movie movie = new Movie(movieId, title, year, rating, plot, poster);
+				return movie;
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return null;
+	}	
+
+	public int insertMovie(Movie movie) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		int result = 0;
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			String sql = "INSERT INTO movie (movieID, title, year, rating, plot, poster) VALUES (?,?,?,?,?,?)";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, movie.getMovieID());
+			statement.setString(2, movie.getTitle());
+			statement.setString(3,  movie.getYear());
+			statement.setString(4, movie.getRating());
+			statement.setString(5, movie.getPlot());
+			statement.setString(6, movie.getPoster());
+			result = statement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("Error");
+		}
+		return result;
+	}
+
+	public int deleteMovie(String movieId) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		int result = 0;
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			String sql = "DELETE FROM movie WHERE movieID=?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, movieId);
+			result = statement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("Error");
+		}
+		return result;
+	}
+
+	public int updateMovie(String movieId, Movie movie) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		int result = 0;
+		try {
+			connection = DriverManager.getConnection("jdbc:mysql://cs4500-spring2018-team51.cu4dur2ssaow.us-east-2.rds.amazonaws.com/cs4500_spring2018_team51",
+					"team51", "whitehallbesthall");
+			String sql = "UPDATE movie SET movieID=?,title=?, year=?, rating=?, plot=?,poster=? WHERE movieId=?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, movie.getMovieID());
+			statement.setString(2, movie.getTitle());
+			statement.setString(3,  movie.getYear());
+			statement.setString(4, movie.getRating());
+			statement.setString(5, movie.getPlot());
+			statement.setString(6, movie.getPoster());
+			result = statement.executeUpdate();
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("Error");
+		}
+		return result;
+	}
+}

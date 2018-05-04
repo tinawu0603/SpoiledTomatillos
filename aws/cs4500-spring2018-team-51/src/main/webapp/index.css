@@ -1,0 +1,71 @@
+body {
+	font-style: normal;
+}
+
+.movieTitle {
+	font-size: 24px;
+}
+
+.listing {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #d4d2d2;
+	border-bottom: 1px solid #d4d2d2;
+}
+
+.result {
+	margin-top: 5px;
+	padding: 5px;
+}
+.result img {
+	float: right;
+}
+.custom-btn-group {
+	display: inline;
+	float: right;
+}
+.custom-btn-group .btn {
+	padding: 6px 8px;
+}
+
+.results-section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.roundedBox {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.notRoundedBox {
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.searchContainer {
+	justify-content: center;
+	padding-top: 20px;
+}
+
+a {
+	color:#D3D3D3	;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/

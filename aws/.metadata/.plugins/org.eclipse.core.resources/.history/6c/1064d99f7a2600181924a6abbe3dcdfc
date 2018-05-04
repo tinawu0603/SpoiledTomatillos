@@ -1,0 +1,28 @@
+package edu.northeastern.cs4500.controllers;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import edu.northeastern.cs4500.controllers.EndUser;
+
+@SpringBootTest
+public class EndUserTest {
+	EndUser emily = new EndUser(1, "Emily", "Trinh", "trinh.e@husky.neu.edu", "tinalovesher", true);
+	EndUser tina = new EndUser(2, "Tina", "Wu", "wu.tin@husky.neu.edu", "sheloveset", true);
+	
+	@Test
+	public void changePasswordCorrectTest() {
+		assertEquals(emily.getPassword(), "tinalovesher");
+		emily.changePassword("tinalovesher", "shelovestinaback");
+		assertEquals(emily.getPassword(), "shelovestinaback");
+	}
+	
+	@Test(expected = RuntimeException.class)
+	// should throw exception if user enters a wrong password confirmation
+	public void changePasswordFailTest() {
+		assertEquals(tina.getPassword(), "sheloveset");
+		tina.changePassword("shelovesemily", "tinaiscool");
+	}
+
+}

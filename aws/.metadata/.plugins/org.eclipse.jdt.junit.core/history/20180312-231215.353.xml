@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MovieTest" project="cs4500-spring2018-team-51" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.northeastern.cs4500.controllers.MovieTest" time="0.003">
+    <testcase name="setRatingTest" classname="edu.northeastern.cs4500.controllers.MovieTest" time="0.003"/>
+    <testcase name="setYearTest" classname="edu.northeastern.cs4500.controllers.MovieTest" time="0.0"/>
+    <testcase name="getYearTest" classname="edu.northeastern.cs4500.controllers.MovieTest" time="0.0"/>
+    <testcase name="toStringTest" classname="edu.northeastern.cs4500.controllers.MovieTest" time="0.0"/>
+    <testcase name="getRatingTest" classname="edu.northeastern.cs4500.controllers.MovieTest" time="0.0"/>
+  </testsuite>
+</testrun>

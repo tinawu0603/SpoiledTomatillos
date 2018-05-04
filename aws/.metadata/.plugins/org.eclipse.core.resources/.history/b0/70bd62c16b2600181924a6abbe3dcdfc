@@ -1,0 +1,31 @@
+package edu.northeastern.cs4500.controllers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MovieTest {
+	Movie movie1 = new Movie("00123", "cars", "1000", "10", "fast car", "car.img");
+	Movie movie2 = new Movie("123", "ET", "1997", "9", "aliens", "alien-spec");
+	
+	@Test
+	public void toStringTest() {
+		assertEquals(movie1.toString(), "00123, cars");
+		assertEquals(movie2.toString(), "123, ET");
+	}
+	
+	@Test
+	public void getYearTest() {
+		assertEquals(movie1.getYear(), "1000");
+		assertEquals(movie2.getYear(), "1997");
+	}
+	
+	@Test
+	public void setYearTest() {
+		Movie movie3 = new Movie("1234", "Ianderson", "1990", "9", "dogs", "puppypic");
+		assertEquals(movie3.getYear().equals(movie2.getYear()), false);
+		movie3.setYear("1997");
+		assertEquals(movie3.getYear().equals(movie2.getYear()), true);
+	}
+
+}

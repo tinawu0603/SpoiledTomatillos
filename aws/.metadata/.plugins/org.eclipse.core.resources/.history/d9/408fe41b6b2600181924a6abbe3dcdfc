@@ -1,0 +1,15 @@
+package edu.northeastern.cs4500.controllers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MovieTest {
+	Movie movie1 = new Movie("00123", "cars", "1000", "10", "fast car", "car.img");
+
+	@Test
+	public void toStringTest() {
+		assertEquals(movie1.toString(), "00123, cars");
+	}
+
+}

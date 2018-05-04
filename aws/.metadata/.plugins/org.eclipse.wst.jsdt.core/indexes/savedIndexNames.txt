@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\TinaW\team-51-spring18\aws\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3687348132.index
+2102060834.index
+548502720.index
+2087135454.index
+3410234674.index
+412242858.index
+425037157.index
+4034325039.index
